@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddyFitness | Recover. Refresh. Regain Your Health.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAFAFA;
+            color: #0F172A;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-marquee {
+            animation: marquee 35s linear infinite;
+        }
+
+        .animate-marquee-icons {
+            animation: marquee 20s linear infinite;
+        }
+
+        .animate-marquee-slow {
+            animation: marquee 30s linear infinite;
+        }
+
+        .animate-marquee-fast {
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-8px) rotate(1deg);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes attention-jump {
+
+            0%,
+            100% {
+                transform: scale(1) translateY(0);
+                filter: brightness(1);
+            }
+
+            50% {
+                transform: scale(1.03) translateY(-3px);
+                filter: brightness(1.1);
+                box-shadow: 0 10px 25px rgba(244, 25, 82, 0.3);
+            }
+        }
+
+        .btn-animate {
+            animation: attention-jump 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+
+        .cta-gradient {
+            background: linear-gradient(to right, #f41952, #8c52ff);
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .addy-col {
+            background: #ffffff;
+            border-left: 3px solid #0FB9B1;
+            border-right: 3px solid #0FB9B1;
+            box-shadow: 0 10px 40px rgba(15, 185, 177, 0.15);
+        }
+
+        /* FAQ Transition */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 250px;
+            padding-top: 1rem;
+        }
+
+        .faq-item.active .chevron-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- --- TOP ALERT MARQUEE --- -->
+    <div
+        class="bg-slate-900 text-white py-3 overflow-hidden sticky top-0 z-[70] border-b border-[#0FB9B1]/30 shadow-xl">
+        <div class="flex animate-marquee whitespace-nowrap gap-8 items-center">
+            <div class="flex items-center gap-10 text-[9px] lg:text-xs font-black tracking-[0.2em] uppercase">
+                <span class="text-[#0FB9B1]">PCOS REVERSAL</span>
+                <span class="text-white">TYPE-2 DIABETES</span>
+                <span class="text-[#f41952]">HYPOTHYROIDISM</span>
+                <span class="text-white">POST-PREGNANCY WEIGHT</span>
+                <span class="text-[#8c52ff]">MENTAL WELLNESS</span>
+                <span class="text-[#0FB9B1]">GUT HEALTH</span>
+                <span class="text-[#00e0ff]">RENAL HEALTH</span>
+                <span class="text-[#ff001f]">ANEMIA</span>
+            </div>
+            <div class="flex items-center gap-10 text-[9px] lg:text-xs font-black tracking-[0.2em] uppercase">
+                <span class="text-[#0FB9B1]">PCOS REVERSAL</span>
+                <span class="text-white">TYPE-2 DIABETES</span>
+                <span class="text-[#f41952]">HYPOTHYROIDISM</span>
+                <span class="text-white">POST-PREGNANCY WEIGHT</span>
+                <span class="text-[#8c52ff]">MENTAL WELLNESS</span>
+                <span class="text-[#0FB9B1]">GUT HEALTH</span>
+                <span class="text-[#00e0ff]">RENAL HEALTH</span>
+                <span class="text-[#ff001f]">ANEMIA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- --- HERO SECTION --- -->
+    <section class="relative bg-white pt-8 pb-10 lg:pt-16 lg:pb-16 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
+
+            <!-- TEXT CONTENT BLOCK -->
+            <div class="text-center lg:text-left z-10">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 font-black text-[8px] uppercase tracking-[0.2em] mb-4">
+                    <i data-lucide="shield-check" class="w-3 h-3"></i>
+                    <span>India's Leading Tele-Clinical Ecosystem</span>
+                </div>
+
+                <h1
+                    class="text-3xl sm:text-5xl lg:text-7xl font-black leading-[1.1] lg:leading-[1.05] mb-6 tracking-tighter text-slate-900 uppercase">
+                    Recover. Refresh. <br>
+                    <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-[#0FB9B1] via-[#1E3A8A] to-[#E91E63]">Regain
+                        Your Health.</span>
+                </h1>
+
+                <p
+                    class="text-base lg:text-lg text-slate-500 mb-8 max-w-lg leading-relaxed mx-auto lg:mx-0 font-medium">
+                    Bridging <span class="text-slate-900 font-bold uppercase tracking-tight">Expert Healthcare</span>
+                    and <span class="text-[#f41952] font-bold uppercase tracking-tight">Sustainable Recovery</span>.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 mb-8 max-w-md mx-auto lg:mx-0 text-left">
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle"
+                            class="w-4 h-4 text-[#0FB9B1]"></i> <span
+                            class="text-[10px] lg:text-xs font-bold text-slate-600 uppercase tracking-tighter">No Gym
+                            Required</span></div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle"
+                            class="w-4 h-4 text-[#0FB9B1]"></i> <span
+                            class="text-[10px] lg:text-xs font-bold text-slate-600 uppercase tracking-tighter">In-house
+                            doctor support</span></div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle"
+                            class="w-4 h-4 text-[#0FB9B1]"></i> <span
+                            class="text-[10px] lg:text-xs font-bold text-slate-600 uppercase tracking-tighter">Ghar ka
+                            khana</span></div>
+                    <div class="flex items-center gap-2"><i data-lucide="check-circle"
+                            class="w-4 h-4 text-[#0FB9B1]"></i> <span
+                            class="text-[10px] lg:text-xs font-bold text-slate-600 uppercase tracking-tighter">Trusted
+                            by Indians</span></div>
+                </div>
+
+                <button
+                    class="w-full sm:w-auto px-12 py-5 cta-gradient text-white rounded-2xl font-black text-md lg:text-lg shadow-xl hover:scale-105 transition-all active:scale-95 btn-animate uppercase tracking-widest mb-8 lg:mb-0">
+                    Book Free Consultation
+                </button>
+            </div>
+
+            <!-- HERO SUCCESS GRID (2x3 SQUARE FORMAT) -->
+            <div class="relative max-h-[280px] lg:max-h-[320px]">
+                <div class="grid grid-cols-2 grid-rows-3 gap-1.5 lg:gap-2 h-full">
+
+                    <!-- Image 1: PCOS Success -->
+                    <div
+                        class="rounded-xl lg:rounded-2xl bg-white p-1 lg:p-1.5 shadow-xl border border-slate-100 overflow-hidden group">
+                        <div class="relative h-full w-full overflow-hidden rounded-lg lg:rounded-xl aspect-square">
+                            <img src="https://i.ibb.co/XrjLWjbL/PHOTO-2026-02-14-17-44-57.jpg"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                                alt="PCOS Reversed">
+                            <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md p-2 text-white">
+                                <p class="text-[6px] lg:text-[7px] font-black uppercase text-[#0FB9B1] leading-none">
+                                    PCOS Reversed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image 2: Anxiety Recovery -->
+                    <div
+                        class="rounded-xl lg:rounded-2xl bg-white p-1 lg:p-1.5 shadow-xl border border-slate-100 overflow-hidden group">
+                        <div class="relative h-full w-full overflow-hidden rounded-lg lg:rounded-xl aspect-square">
+                            <img src="https://i.ibb.co/qwkwJjL/Screenshot-2026-02-15-at-1-59-14-AM.png"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                                alt="Anxiety Recovery">
+                            <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md p-2 text-white">
+                                <p class="text-[6px] lg:text-[7px] font-black uppercase text-[#0FB9B1] leading-none">
+                                    Anxiety Recovery</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image 3: PCOD & IBS -->
+                    <div
+                        class="rounded-xl lg:rounded-2xl bg-white p-1 lg:p-1.5 shadow-xl border border-slate-100 overflow-hidden group">
+                        <div class="relative h-full w-full overflow-hidden rounded-lg lg:rounded-xl aspect-square">
+                            <img src="https://i.ibb.co/rRS81bG9/Screenshot-2026-02-15-at-1-14-25-AM.png"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                                alt="PCOD IBS">
+                            <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md p-2 text-white">
+                                <p class="text-[6px] lg:text-[7px] font-black uppercase text-[#0FB9B1] leading-none">
+                                    PCOD & IBS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image 4: Nutrition -->
+                    <div
+                        class="rounded-xl lg:rounded-2xl bg-white p-1 lg:p-1.5 shadow-xl border border-slate-100 overflow-hidden group">
+                        <div class="relative h-full w-full overflow-hidden rounded-lg lg:rounded-xl aspect-square">
+                            <img src="https://i.ibb.co/Gfpm2rdP/Whats-App-Image-2026-02-14-at-17-26-28-1.jpg"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                alt="Nutrition">
+                            <div class="absolute bottom-0 inset-x-0 bg-slate-900/80 backdrop-blur-md p-2 text-white">
+                                <p class="text-[6px] lg:text-[7px] font-black uppercase text-[#0FB9B1] leading-none">
+                                    Nutrition</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- ICON LOOP (INFINITE) --- -->
+    <section class="py-4 bg-slate-50 border-y border-slate-200 overflow-hidden">
+        <div class="flex animate-marquee-icons whitespace-nowrap gap-12 lg:gap-20 opacity-30 items-center">
+            <div class="flex items-center gap-12 lg:gap-20">
+                <i data-lucide="dumbbell" class="w-8 h-8"></i><i data-lucide="activity" class="w-8 h-8"></i><i
+                    data-lucide="stethoscope" class="w-8 h-8"></i><i data-lucide="heart-pulse" class="w-8 h-8"></i><i
+                    data-lucide="users" class="w-8 h-8"></i><i data-lucide="zap" class="w-8 h-8"></i><i
+                    data-lucide="utensils" class="w-8 h-8"></i><i data-lucide="shield-check" class="w-8 h-8"></i>
+            </div>
+            <div class="flex items-center gap-12 lg:gap-20">
+                <i data-lucide="dumbbell" class="w-8 h-8"></i><i data-lucide="activity" class="w-8 h-8"></i><i
+                    data-lucide="stethoscope" class="w-8 h-8"></i><i data-lucide="heart-pulse" class="w-8 h-8"></i><i
+                    data-lucide="users" class="w-8 h-8"></i><i data-lucide="zap" class="w-8 h-8"></i><i
+                    data-lucide="utensils" class="w-8 h-8"></i><i data-lucide="shield-check" class="w-8 h-8"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- CONSOLIDATED CLINICAL SECTION: MEALS + SYSTEM AGITATION + FLIP THE SCRIPT --- -->
+    <section class="relative py-6 lg:py-10 bg-white overflow-hidden">
+
+        <!-- DYNAMIC BACKGROUND (FADED FITNESS/FOOD ICONS) -->
+        <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-[0.06]">
+            <div class="absolute top-10 left-[5%] rotate-12 text-[#f41952]"><i data-lucide="pizza"
+                    class="w-48 h-48"></i></div>
+            <div class="absolute top-1/4 right-[10%] -rotate-12 text-blue-500"><i data-lucide="dumbbell"
+                    class="w-40 h-40"></i></div>
+            <div class="absolute bottom-1/3 left-[15%] rotate-45 text-[#0FB9B1]"><i data-lucide="apple"
+                    class="w-36 h-36"></i></div>
+            <div class="absolute top-1/2 right-[20%] -rotate-45 text-purple-500 scale-125"><i data-lucide="activity"
+                    class="w-56 h-56"></i></div>
+            <div class="absolute bottom-10 right-[5%] rotate-12 text-orange-500"><i data-lucide="utensils-2"
+                    class="w-44 h-44"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- PART A: GHAR KA KHANA INFINITE CAROUSEL -->
+            <div class="text-center mb-12 px-6">
+                <h2 class="text-2xl lg:text-5xl font-black mb-3 uppercase tracking-tighter leading-none">What We
+                    Suggest: <span class="text-[#0FB9B1]">Ghar Ka Khana</span></h2>
+                <p class="text-slate-500 text-[10px] lg:text-sm uppercase tracking-[0.2em] font-bold">Clinical reversal
+                    starts in your kitchen.</p>
+            </div>
+
+            <div
+                class="flex animate-marquee-fast whitespace-nowrap gap-6 lg:gap-10 py-6 px-4 no-scrollbar mb-16 lg:mb-20">
+                <!-- 1. Chicken leg Piece Meal -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/B2Ms3t0H/Whats-App-Image-2026-02-14-at-17-26-25-1.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Chicken Leg Meal</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">High protein muscle recovery
+                            fuel.</p>
+                    </div>
+                </div>
+                <!-- 2. Wheat Cake -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/LdPCQ0NG/Whats-App-Image-2026-02-14-at-17-26-25.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Wheat Cake</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Guilt-free healthy sweet
+                            cravings.</p>
+                    </div>
+                </div>
+                <!-- 3. Two down burger -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/7xDByhz5/Whats-App-Image-2026-02-14-at-17-26-26-1.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Two Down Burger</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Healthy cheat meal
+                            alternative.</p>
+                    </div>
+                </div>
+                <!-- 4. Methi paratha -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/q3C480jQ/Whats-App-Image-2026-02-14-at-17-26-26-2.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Methi Paratha</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Fiber-rich traditional
+                            breakfast.</p>
+                    </div>
+                </div>
+                <!-- 5. Honey Pancake -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/G4K3HGJd/Whats-App-Image-2026-02-14-at-17-26-26.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Honey Pancake</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Natural energy booster start.
+                        </p>
+                    </div>
+                </div>
+                <!-- 6. Mushroom creamy soup -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/1GBSw3t6/Whats-App-Image-2026-02-14-at-17-26-27-1.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Mushroom Soup</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Low-calorie creamy comfort.
+                        </p>
+                    </div>
+                </div>
+                <!-- 7. Weight loss plate -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/67S0B8G7/Whats-App-Image-2026-02-14-at-17-26-27.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Weight Loss Plate</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Perfectly balanced macro
+                            meal.</p>
+                    </div>
+                </div>
+                <!-- 8. Rajma Chawal -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/Gfpm2rdP/Whats-App-Image-2026-02-14-at-17-26-28-1.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Rajma Chawal</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Classic Indian protein combo.
+                        </p>
+                    </div>
+                </div>
+                <!-- 9. SoyaBean masala rice -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/7xtJ873F/Whats-App-Image-2026-02-14-at-17-26-28-2.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Soya Masala Rice</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Plant-based protein power.
+                        </p>
+                    </div>
+                </div>
+                <!-- 10. Veg Roll -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/99vFVGF0/Whats-App-Image-2026-02-14-at-17-26-28-3.jpg"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Veg Roll</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Fiber-packed clinical snack.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DUPLICATE FOR LOOP (First 6 items for smooth transition) -->
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/B2Ms3t0H/Whats-App-Image-2026-02-14-at-17-26-25-1.jpg"
+                            class="w-full h-full object-cover" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Chicken Leg Meal</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">High protein muscle recovery
+                            fuel.</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/LdPCQ0NG/Whats-App-Image-2026-02-14-at-17-26-25.jpg"
+                            class="w-full h-full object-cover" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Wheat Cake</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Guilt-free healthy sweet
+                            cravings.</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/7xDByhz5/Whats-App-Image-2026-02-14-at-17-26-26-1.jpg"
+                            class="w-full h-full object-cover" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Two Down Burger</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Healthy cheat meal
+                            alternative.</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/q3C480jQ/Whats-App-Image-2026-02-14-at-17-26-26-2.jpg"
+                            class="w-full h-full object-cover" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Methi Paratha</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Fiber-rich traditional
+                            breakfast.</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/G4K3HGJd/Whats-App-Image-2026-02-14-at-17-26-26.jpg"
+                            class="w-full h-full object-cover" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Honey Pancake</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Natural energy booster start.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[260px] lg:min-w-[320px] rounded-[2rem] bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                    <div class="h-44 lg:h-56 w-full overflow-hidden"><img
+                            src="https://i.ibb.co/1GBSw3t6/Whats-App-Image-2026-02-14-at-17-26-27-1.jpg"
+                            class="w-full h-full object-cover" /></div>
+                    <div class="p-6 text-left whitespace-normal uppercase font-black">
+                        <p class="text-base lg:text-lg text-slate-900 leading-none">Mushroom Soup</p>
+                        <p class="text-[9px] lg:text-[10px] text-slate-500 mt-1 font-bold">Low-calorie creamy comfort.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PART B: SYSTEM AGITATION -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:text-left px-6">
+                <div class="flex-1">
+                    <h2
+                        class="text-2xl sm:text-3xl lg:text-5xl font-black mb-4 leading-tight tracking-tighter uppercase text-slate-900 leading-none">
+                        Your willpower isn't broken — <br><span class="text-[#f41952]">The system is.</span></h2>
+                    <p
+                        class="text-sm lg:text-base text-slate-500 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium italic">
+                        Between busy workdays and confusing diets, staying fit feels impossible. You're stuck in a loop
+                        designed for failure.</p>
+
+                    <div class="max-w-md mx-auto lg:mx-0">
+                        <div
+                            class="inline-flex items-center gap-2 lg:gap-3 px-5 py-4 bg-slate-900 text-white rounded-full shadow-2xl mb-6 border border-slate-700">
+                            <div
+                                class="flex items-center gap-2 text-[8px] sm:text-[10px] lg:text-[11px] font-black uppercase tracking-widest leading-none">
+                                <span>Motivated</span><i data-lucide="arrow-right"
+                                    class="w-2 h-2 sm:w-3 sm:h-3 text-[#f41952]"></i>
+                                <span>Exhausted</span><i data-lucide="arrow-right"
+                                    class="w-2 h-2 sm:w-3 sm:h-3 text-[#f41952]"></i>
+                                <span>Quit</span><i data-lucide="arrow-right"
+                                    class="w-2 h-2 sm:w-3 sm:h-3 text-[#f41952]"></i>
+                                <span>Repeat</span>
+                            </div>
+                        </div>
+                        <p
+                            class="text-xs sm:text-sm lg:text-lg font-black text-slate-900 uppercase tracking-[0.2em] animate-pulse">
+                            But the problem isn't you — it's the guidance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PART C: FLIP THE SCRIPT CARD -->
+                <div
+                    class="flex-1 bg-white p-6 sm:p-8 lg:p-12 rounded-[2.5rem] lg:rounded-[3rem] border border-slate-100 shadow-2xl relative mt-8 lg:mt-0">
+                    <div
+                        class="absolute -top-4 -right-2 sm:-right-4 w-10 h-10 sm:w-12 sm:h-12 cta-gradient rounded-full flex items-center justify-center text-white shadow-xl">
+                        <i data-lucide="star" class="w-5 h-5 sm:w-6 sm:h-6 fill-current"></i>
+                    </div>
+                    <h4
+                        class="text-xl lg:text-2xl font-black mb-8 uppercase tracking-widest text-[#0FB9B1] leading-none">
+                        Let's flip the script</h4>
+                    <div class="space-y-6 sm:space-y-8 text-left">
+                        <div class="flex gap-4">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0 border border-emerald-100 shadow-sm">
+                                <i data-lucide="utensils" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-black text-xs sm:text-sm uppercase mb-1">1. Nutrition — Nourish, don't
+                                    punish.</h5>
+                                <p
+                                    class="text-[10px] sm:text-[11px] lg:text-xs text-slate-500 leading-relaxed font-medium">
+                                    Indian meals designed for hormonal balance. PCOS-friendly and biryani is safe.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm border border-blue-100">
+                                <i data-lucide="heart" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-black text-xs sm:text-sm uppercase mb-1">2. Mindset + Support — You're
+                                    not alone.</h5>
+                                <p
+                                    class="text-[10px] sm:text-[11px] lg:text-xs text-slate-500 leading-relaxed font-medium">
+                                    Regular coach check-ins for consistent clinical mental support.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm border border-purple-100">
+                                <i data-lucide="zap" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-black text-xs sm:text-sm uppercase mb-1">3. Mobility — Strength over
+                                    suffering.</h5>
+                                <p
+                                    class="text-[10px] sm:text-[11px] lg:text-xs text-slate-500 leading-relaxed font-medium">
+                                    Hormone-friendly movement built for your body cycle & energy levels.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- TELE-CLINICAL JOURNEY --- -->
+    <section id="teleconsult" class="py-12 lg:py-16 px-6 bg-white border-y border-slate-50">
+        <div class="max-w-7xl mx-auto text-center uppercase">
+            <div class="mb-10 text-center px-4">
+                <span
+                    class="text-blue-600 font-black text-[9px] sm:text-[10px] uppercase tracking-[0.2em] mb-2 block uppercase">Medical
+                    Roadmap</span>
+                <h2
+                    class="text-2xl sm:text-3xl lg:text-5xl font-black mb-4 uppercase tracking-tighter text-slate-900 leading-none">
+                    Your Tele-Clinical Journey</h2>
+                <p class="text-slate-500 max-w-xl mx-auto text-[10px] sm:text-xs lg:text-sm font-medium">Expertise meets
+                    your kitchen habits for sustainable recovery.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-stretch px-2 lg:px-0">
+                <div
+                    class="p-8 bg-slate-50 rounded-[2rem] lg:rounded-[2.5rem] shadow-xl border border-slate-100 hover:-translate-y-2 transition-all flex flex-col items-center group h-full text-center">
+                    <div
+                        class="w-12 h-12 bg-[#0FB9B1] text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black text-sm uppercase tracking-tight mb-2 leading-none">1. Bio-Scan</h4>
+                    <p class="text-[11px] lg:text-xs text-slate-500 leading-relaxed font-bold opacity-60">Symptom
+                        profiling for root-cause mapping.</p>
+                </div>
+                <div
+                    class="p-8 bg-slate-50 rounded-[2rem] lg:rounded-[2.5rem] shadow-xl border border-slate-100 hover:-translate-y-2 transition-all flex flex-col items-center group h-full text-center">
+                    <div
+                        class="w-12 h-12 cta-gradient text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i data-lucide="video" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black text-sm uppercase tracking-tight mb-2 leading-none">2. Expert Call</h4>
+                    <p class="text-[11px] lg:text-xs text-slate-500 leading-relaxed font-bold opacity-60">30-min deep
+                        dive to clear biological barriers.</p>
+                </div>
+                <div
+                    class="p-8 bg-slate-50 rounded-[2rem] lg:rounded-[2.5rem] shadow-xl border border-slate-100 hover:-translate-y-2 transition-all flex flex-col items-center group h-full text-center">
+                    <div
+                        class="w-12 h-12 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i data-lucide="map" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black text-sm uppercase tracking-tight mb-2 leading-none">3. Roadmap</h4>
+                    <p class="text-[11px] lg:text-xs text-slate-500 leading-relaxed font-bold opacity-60">A tailored
+                        habit-based reversal strategy.</p>
+                </div>
+                <div
+                    class="p-8 bg-slate-50 rounded-[2rem] lg:rounded-[2.5rem] shadow-xl border border-slate-100 hover:-translate-y-2 transition-all flex flex-col items-center group h-full text-center">
+                    <div
+                        class="w-12 h-12 bg-pink-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-black text-sm uppercase tracking-tight mb-2 leading-none">4. Analysis</h4>
+                    <p class="text-[11px] lg:text-xs text-slate-500 leading-relaxed font-bold opacity-60">Weekly
+                        biomarker monitoring with MDs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- TELE-CONSULTATION SERVICES SECTION --- -->
+    <section class="py-6 lg:py-10 px-4 sm:px-6 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Section Heading -->
+            <div class="text-center mb-12 lg:mb-16 px-4">
+                <span
+                    class="text-blue-600 font-black text-[9px] sm:text-[10px] uppercase tracking-[0.2em] mb-3 block">Expert
+                    Care</span>
+                <h2
+                    class="text-2xl sm:text-3xl lg:text-5xl font-black mb-4 uppercase tracking-tighter text-slate-900 leading-none">
+                    Our Healthcare Services</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-xs sm:text-sm lg:text-base font-medium leading-relaxed">
+                    Connect with certified medical professionals from the comfort of your home.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch">
+                <!-- CARD 1: Tele-Consultation Services -->
+                <div
+                    class="bg-white rounded-2xl lg:rounded-[2.5rem] p-6 sm:p-8 lg:p-10 shadow-2xl border border-slate-100 hover:shadow-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div
+                            class="w-14 h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-[#0FB9B1] to-[#1E3A8A] rounded-2xl flex items-center justify-center shadow-lg">
+                            <i data-lucide="video" class="w-7 h-7 lg:w-8 lg:h-8 text-white"></i>
+                        </div>
+                        <h3
+                            class="text-lg sm:text-xl lg:text-2xl font-black uppercase tracking-tighter text-slate-900 leading-tight">
+                            Tele-Consultation</h3>
+                    </div>
+                    <div class="space-y-3 mb-8">
+                        <div
+                            class="flex items-center gap-4 p-4 lg:p-5 bg-gradient-to-r from-slate-50 to-blue-50/50 rounded-xl border border-slate-100 hover:border-[#0FB9B1] transition-all group">
+                            <div
+                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <i data-lucide="stethoscope" class="w-5 h-5 text-[#0FB9B1]"></i>
+                            </div>
+                            <span
+                                class="text-sm lg:text-base font-black uppercase tracking-tight text-slate-700">General
+                                Physician</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 p-4 lg:p-5 bg-gradient-to-r from-slate-50 to-red-50/50 rounded-xl border border-slate-100 hover:border-[#f41952] transition-all group">
+                            <div
+                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <i data-lucide="activity" class="w-5 h-5 text-[#f41952]"></i>
+                            </div>
+                            <span
+                                class="text-sm lg:text-base font-black uppercase tracking-tight text-slate-700">Endocrinologist</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 p-4 lg:p-5 bg-gradient-to-r from-slate-50 to-purple-50/50 rounded-xl border border-slate-100 hover:border-[#8c52ff] transition-all group">
+                            <div
+                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <i data-lucide="heart" class="w-5 h-5 text-[#8c52ff]"></i>
+                            </div>
+                            <span
+                                class="text-sm lg:text-base font-black uppercase tracking-tight text-slate-700">Gynecologist</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 p-4 lg:p-5 bg-gradient-to-r from-slate-50 to-blue-50/50 rounded-xl border border-slate-100 hover:border-blue-600 transition-all group">
+                            <div
+                                class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform">
+                                <i data-lucide="brain" class="w-5 h-5 text-blue-600"></i>
+                            </div>
+                            <span
+                                class="text-sm lg:text-base font-black uppercase tracking-tight text-slate-700">Counsellor</span>
+                        </div>
+                    </div>
+                    <a href="https://www.addyfitness.com/healthcare" target="_blank"
+                        class="block w-full py-4 lg:py-5 px-6 cta-gradient text-white rounded-xl lg:rounded-2xl font-black text-sm lg:text-base shadow-xl hover:scale-105 transition-all active:scale-95 uppercase tracking-widest text-center">Book
+                        Healthcare Consultation</a>
+                </div>
+
+                <!-- CARD 2: Clinical Nutrition Fact -->
+                <div
+                    class="bg-gradient-to-br from-[#0FB9B1] to-[#1E3A8A] rounded-[2rem] lg:rounded-[3rem] p-8 lg:p-12 shadow-2xl border border-[#0FB9B1] text-white relative overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center shadow-lg">
+                                <i data-lucide="utensils" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <h3 class="text-xl lg:text-2xl font-black uppercase tracking-tighter leading-none">Clinical
+                                Nutrition</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <p class="text-sm lg:text-base font-bold leading-relaxed opacity-90">
+                                Did you know? <span class="text-white font-black">80% of chronic health
+                                    conditions</span> can be reversed through personalized nutrition and lifestyle
+                                modifications.
+                            </p>
+                            <div class="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                <p class="text-[10px] lg:text-xs font-black uppercase tracking-widest mb-2 opacity-80">
+                                    Clinical Fact</p>
+                                <p class="text-2xl lg:text-4xl font-black leading-none mb-2">98.2%</p>
+                                <p class="text-xs font-bold opacity-90">of our clients see measurable health
+                                    improvements within 90 days using evidence-based nutrition protocols.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- WHY CHOOSE ADDYFITNESS (RESTORED TABLE) --- -->
+    <section class="py-6 lg:py-10 px-6 bg-[#FAFAFA]">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-2xl lg:text-5xl font-black mb-4 uppercase tracking-tighter leading-none text-slate-900">Why
+                Choose AddyFitness?</h2>
+            <p class="text-slate-500 text-[10px] sm:text-xs uppercase tracking-widest font-bold mb-12">The Gold Standard
+                Comparison Matrix</p>
+
+            <div
+                class="bg-white rounded-[2rem] lg:rounded-[3rem] shadow-2xl border border-slate-100 overflow-hidden relative">
+                <div class="overflow-x-auto no-scrollbar px-2">
+                    <table class="w-full text-center border-collapse">
+                        <thead>
+                            <tr
+                                class="bg-slate-50 text-[9px] lg:text-[11px] font-black uppercase tracking-widest text-slate-500">
+                                <th class="p-6 text-left border-b border-slate-100">Comparison Feature</th>
+                                <th class="p-6 bg-slate-900 text-[#0FB9B1] border-b border-[#0FB9B1]/20 relative">
+                                    AddyFitness <div
+                                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0FB9B1] text-white px-3 py-1 rounded-full text-[8px] uppercase tracking-widest font-black">
+                                        WINNER</div>
+                                </th>
+                                <th class="p-6 border-b border-slate-100">Other Brands</th>
+                                <th class="p-6 border-b border-slate-100">Insta Coaches</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-[11px] lg:text-sm font-bold text-slate-700 uppercase">
+                            <tr class="comparison-table-row">
+                                <td class="p-6 text-left text-slate-900">Personalized Plans</td>
+                                <td class="p-6 addy-col"><i data-lucide="check-circle"
+                                        class="text-[#0FB9B1] w-5 h-5 mx-auto"></i><span
+                                        class="text-[8px] mt-1 block font-black">Based on Daily Life</span></td>
+                                <td class="p-6 opacity-30">Generic PDFs</td>
+                                <td class="p-6 opacity-30">Templates</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="p-6 text-left text-slate-900">Dual Support</td>
+                                <td class="p-6 addy-col"><i data-lucide="check-circle"
+                                        class="text-[#0FB9B1] w-5 h-5 mx-auto"></i><span
+                                        class="text-[8px] mt-1 block font-black">Medical + Mental Health</span></td>
+                                <td class="p-6 opacity-30">Single Contact</td>
+                                <td class="p-6 opacity-30">Limited</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="p-6 text-left text-slate-900">Indian Meals</td>
+                                <td class="p-6 addy-col"><i data-lucide="check-circle"
+                                        class="text-[#0FB9B1] w-5 h-5 mx-auto"></i><span
+                                        class="text-[8px] mt-1 block">Biryani & Pizza OK</span></td>
+                                <td class="p-6 opacity-30">Boiled food</td>
+                                <td class="p-6 opacity-30">Restrictive</td>
+                            </tr>
+                            <tr class="comparison-table-row">
+                                <td class="p-6 text-left text-slate-900">No Gym Required</td>
+                                <td class="p-6 addy-col"><i data-lucide="check-circle"
+                                        class="text-[#0FB9B1] w-5 h-5 mx-auto"></i><span
+                                        class="text-[8px] mt-1 block">Walk + Home Move</span></td>
+                                <td class="p-6 opacity-30 text-amber-600">Gym Upsells</td>
+                                <td class="p-6 opacity-30">Supplements</td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 text-left text-slate-900 uppercase tracking-tighter font-black">Expert
+                                    Team</td>
+                                <td class="p-6 addy-col rounded-b-3xl"><i data-lucide="check-circle"
+                                        class="text-[#0FB9B1] w-5 h-5 mx-auto"></i><span
+                                        class="text-[8px] mt-1 block">Nutritionists + MDs</span></td>
+                                <td class="p-6 opacity-30">Influencers</td>
+                                <td class="p-6 opacity-30 text-red-500">Unverified</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Swipe Indicator for Mobile -->
+            <div
+                class="lg:hidden mt-4 flex items-center justify-center gap-2 text-slate-400 font-bold text-[10px] uppercase">
+                <i data-lucide="arrow-left-right" class="w-3 h-3"></i> Swipe table to compare
+            </div>
+        </div>
+    </section>
+
+    <!-- --- TESTIMONIAL CAROUSEL (INFINITE LOOP) --- -->
+    <section class="py-6 lg:py-10 px-6 bg-white overflow-hidden border-t border-slate-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-2xl lg:text-5xl font-black mb-3 uppercase tracking-tighter leading-none">Real Results. <span
+                    class="text-[#f41952]">Real People.</span></h2>
+            <p class="text-slate-500 text-[10px] lg:text-xs uppercase tracking-widest font-bold mb-12">Clinical proof
+                from our successful transformations.</p>
+
+            <div class="flex animate-marquee-slow whitespace-nowrap gap-6 lg:gap-10 py-6 px-4 no-scrollbar">
+
+                <!-- 1. Tarique -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Successfully managed post-cycle therapy and normalized cholesterol levels naturally through
+                        targeted nutrition."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Tarique
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">PCT & Cholesterol
+                            Control
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Md Shabaz -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Reversed fatty liver grades through specific dietary adjustments and sustainable lifestyle
+                        modifications."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Md Shabaz
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Fatty Liver
+                            Control</p>
+                    </div>
+                </div>
+
+                <!-- 3. Ankita Samal (Image) -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <img src="https://i.ibb.co/qwkwJjL/Screenshot-2026-02-15-at-1-59-14-AM.png"
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform" />
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Recovered from severe anxiety and depression through holistic mental wellness and clinical
+                        support."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Ankita
+                            Samal</p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Anxiety &
+                            Depression Recovery
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4. Alisha C -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Achieved sustainable weight loss by eating only pure homemade food without any restrictive
+                        dieting."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Alisha C
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Weight Loss -
+                            Homemade Food</p>
+                    </div>
+                </div>
+
+                <!-- 5. Suparna Jee (Image) -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <img src="https://i.ibb.co/XrjLWjbL/PHOTO-2026-02-14-17-44-57.jpg"
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform" />
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Completely reversed PCOS symptoms and achieved significant weight loss with personalized
+                        clinical nutrition."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Suparna
+                            Jee</p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">PCOS Reversed &
+                            Weight Loss</p>
+                    </div>
+                </div>
+
+                <!-- 6. Lipsa B -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Enhanced mobility and agility through targeted exercises that dramatically boosted my
+                        self-confidence."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Lipsa B.
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Mobility &
+                            Confidence</p>
+                    </div>
+                </div>
+
+                <!-- 7. Asish Dutta (Image) -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <img src="https://i.ibb.co/dsJsd5Rc/Screenshot-2026-02-15-at-1-08-45-AM.png"
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform" />
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Regained lost confidence through consistent home training routines and expert guidance
+                        support."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Asish
+                            Dutta</p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Home Training
+                            Confidence</p>
+                    </div>
+                </div>
+
+                <!-- 8. Masooma Shamin (Image) -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <img src="https://i.ibb.co/rRS81bG9/Screenshot-2026-02-15-at-1-14-25-AM.png"
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform" />
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Completely reversed PCOD and IBS complications with specialized gut-friendly nutrition
+                        protocols."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Masooma
+                            Shamin</p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">PCOD & IBS
+                            Reversed
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 9. Hakim Kahn -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Optimized daily lifestyle habits for sustained energy levels and long-term health benefits."
+                    </p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Hakim Kahn
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Daily Lifestyle
+                            Optimization</p>
+                    </div>
+                </div>
+
+                <!-- Duplicate for Loop (First 3 for smooth transition) -->
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Successfully managed post-cycle therapy and normalized cholesterol levels naturally through
+                        targeted nutrition."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Tarique
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">PCT & Cholesterol
+                            Control
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-100 flex items-center justify-center border-4 border-slate-200 mb-6">
+                        <i data-lucide="user" class="w-10 h-10 text-slate-500"></i>
+                    </div>
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Reversed fatty liver grades through specific dietary adjustments and sustainable lifestyle
+                        modifications."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Md Shabaz
+                        </p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Fatty Liver
+                            Control</p>
+                    </div>
+                </div>
+                <div
+                    class="min-w-[280px] sm:min-w-[320px] lg:min-w-[380px] bg-white rounded-[2rem] lg:rounded-[2.5rem] p-6 lg:p-8 border border-slate-100 shadow-2xl flex flex-col items-center text-center group">
+                    <img src="https://i.ibb.co/qwkwJjL/Screenshot-2026-02-15-at-1-59-14-AM.png"
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover object-top border-4 border-slate-200 mb-6" />
+                    <p
+                        class="text-xs sm:text-sm font-medium italic text-slate-600 leading-relaxed mb-6 whitespace-normal uppercase font-black tracking-tight">
+                        "Recovered from severe anxiety and depression through holistic mental wellness and clinical
+                        support."</p>
+                    <div class="pt-6 border-t border-slate-50 w-full uppercase">
+                        <p class="font-black text-base lg:text-lg text-slate-900 leading-none text-slate-900">Ankita
+                            Samal</p>
+                        <p class="text-[9px] font-black text-slate-500 mt-1 uppercase tracking-widest">Anxiety &
+                            Depression Recovery
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- INTERACTIVE CALCULATOR --- -->
+    <section id="calculator" class="py-6 lg:py-10 px-6 border-t border-slate-100 overflow-hidden bg-[#FAFAFA]">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div class="order-2 lg:order-1 relative">
+                <div
+                    class="absolute -inset-4 bg-gradient-to-tr from-[#f41952] to-[#8c52ff] blur-[40px] opacity-10 rounded-full animate-pulse">
+                </div>
+                <div
+                    class="relative bg-white p-8 lg:p-12 rounded-[2rem] lg:rounded-[3.5rem] shadow-2xl border border-slate-100 text-left">
+                    <div class="flex items-center gap-3 mb-8 text-[#f41952] uppercase"><i data-lucide="calculator"
+                            class="w-6 h-6"></i>
+                        <h3
+                            class="text-xl lg:text-2xl font-black text-slate-900 uppercase tracking-tighter leading-none">
+                            Metabolic Checkpoint</h3>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="number" id="weight"
+                                class="w-full bg-slate-50 p-5 rounded-2xl text-xl lg:text-2xl font-black outline-none border-2 border-transparent focus:border-[#f41952] transition-all"
+                                placeholder="WT (KG)">
+                            <input type="number" id="height"
+                                class="w-full bg-slate-50 p-5 rounded-2xl text-xl lg:text-2xl font-black outline-none border-2 border-transparent focus:border-[#f41952] transition-all"
+                                placeholder="HT (CM)">
+                        </div>
+                        <button onclick="calculateBMI()"
+                            class="w-full py-5 cta-gradient text-white rounded-2xl font-black text-md shadow-lg active:scale-95 transition-all uppercase tracking-widest leading-none">Check
+                            Clinical Status</button>
+                        <div id="bmiResult"
+                            class="hidden pt-6 mt-6 border-t border-slate-100 animate-in fade-in slide-in-from-top-4">
+                            <div
+                                class="flex justify-between items-center bg-red-50/50 p-6 rounded-2xl border border-red-100">
+                                <div>
+                                    <p
+                                        class="text-[9px] font-black text-[#f41952] uppercase tracking-widest leading-none mb-1">
+                                        BMI Score</p>
+                                    <p id="bmiValue" class="text-4xl font-black text-slate-900">24.5</p>
+                                </div>
+                                <span id="bmiStatus"
+                                    class="px-4 py-1.5 rounded-full font-black text-[9px] uppercase bg-emerald-100 text-emerald-700">Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 text-center lg:text-left px-4">
+                <h2 class="text-3xl lg:text-7xl font-black tracking-tighter mb-6 uppercase text-slate-900 leading-none">
+                    Science drives <br><span class="text-[#f41952]">Your Recovery.</span></h2>
+                <p
+                    class="text-sm lg:text-lg text-slate-500 leading-relaxed mb-6 font-medium uppercase tracking-tighter opacity-80 italic">
+                    Stop generic cycles. Our plans reverse damage using clinical data and habit architecture.</p>
+                <div class="flex justify-center lg:justify-start gap-4">
+                    <div class="p-5 bg-white rounded-2xl border border-slate-100 shadow-sm text-center w-28 sm:w-32">
+                        <p class="text-[8px] font-black text-slate-400 uppercase tracking-widest leading-none">Success
+                        </p>
+                        <p class="text-xl sm:text-2xl font-black text-[#f41952]">98.2%</p>
+                    </div>
+                    <div class="p-5 bg-white rounded-2xl border border-slate-100 shadow-sm text-center w-28 sm:w-32">
+                        <p class="text-[8px] font-black text-slate-400 uppercase tracking-widest leading-none">Accuracy
+                        </p>
+                        <p class="text-xl sm:text-2xl font-black text-[#8c52ff]">99.9%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- FAQ SECTION --- -->
+    <section class="py-6 lg:py-10 px-6 bg-[#f8fafc] border-t border-slate-100">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl lg:text-3xl font-black mb-8 text-center uppercase tracking-tighter leading-none">Common
+                Questions</h2>
+            <div class="space-y-3 sm:space-y-4" id="faq-container">
+                <!-- FITNESS FAQ 1 -->
+                <div
+                    class="faq-item p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition-all active">
+                    <h4
+                        class="font-black text-[10px] sm:text-[11px] lg:text-xs uppercase flex justify-between items-center text-slate-900 gap-3">
+                        Do I need to join a gym for this program? <i data-lucide="chevron-down"
+                            class="chevron-icon w-4 h-4 flex-shrink-0 transition-transform duration-300"></i></h4>
+                    <p
+                        class="faq-answer text-[10px] sm:text-[11px] text-slate-500 leading-relaxed uppercase tracking-tight font-bold">
+                        No gym required! Our program focuses on home-based mobility exercises and walking routines
+                        designed for your lifestyle.</p>
+                </div>
+                <!-- FITNESS FAQ 2 -->
+                <div
+                    class="faq-item p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition-all">
+                    <h4
+                        class="font-black text-[10px] sm:text-[11px] lg:text-xs uppercase flex justify-between items-center text-slate-900 gap-3">
+                        Can I eat my favorite foods like biryani? <i data-lucide="chevron-down"
+                            class="chevron-icon w-4 h-4 flex-shrink-0 transition-transform duration-300"></i></h4>
+                    <p
+                        class="faq-answer text-[10px] sm:text-[11px] text-slate-500 leading-relaxed uppercase tracking-tight font-bold">
+                        Yes! We believe in sustainable nutrition. Our plans include your favorite Indian meals with
+                        proper portion control and timing.</p>
+                </div>
+                <!-- FITNESS FAQ 3 -->
+                <div
+                    class="faq-item p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition-all">
+                    <h4
+                        class="font-black text-[10px] sm:text-[11px] lg:text-xs uppercase flex justify-between items-center text-slate-900 gap-3">
+                        Is this safe for clinical PCOS/Thyroid? <i data-lucide="chevron-down"
+                            class="chevron-icon w-4 h-4 flex-shrink-0 transition-transform duration-300"></i></h4>
+                    <p
+                        class="faq-answer text-[10px] sm:text-[11px] text-slate-500 leading-relaxed uppercase tracking-tight font-bold">
+                        Absolutely. Plans are vetted by Chief Endocrinologists to ensure hormonal synergy and reversal
+                        of symptoms.</p>
+                </div>
+                <!-- HEALTHCARE FAQ 1 -->
+                <div
+                    class="faq-item p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition-all">
+                    <h4
+                        class="font-black text-[10px] sm:text-[11px] lg:text-xs uppercase flex justify-between items-center text-slate-900 gap-3">
+                        How do I talk to my assigned doctor? <i data-lucide="chevron-down"
+                            class="chevron-icon w-4 h-4 flex-shrink-0 transition-transform duration-300"></i></h4>
+                    <p
+                        class="faq-answer text-[10px] sm:text-[11px] text-slate-500 leading-relaxed uppercase tracking-tight font-bold">
+                        1:1 clinical calls happen directly through our encrypted telehealth suite based on your Bio-Scan
+                        profiling.</p>
+                </div>
+                <!-- HEALTHCARE FAQ 2 -->
+                <div
+                    class="faq-item p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition-all">
+                    <h4
+                        class="font-black text-[10px] sm:text-[11px] lg:text-xs uppercase flex justify-between items-center text-slate-900 gap-3">
+                        Will experts review my blood reports? <i data-lucide="chevron-down"
+                            class="chevron-icon w-4 h-4 flex-shrink-0 transition-transform duration-300"></i></h4>
+                    <p
+                        class="faq-answer text-[10px] sm:text-[11px] text-slate-500 leading-relaxed uppercase tracking-tight font-bold">
+                        Yes! Our medical team uses your existing reports to map insulin resistance and metabolic
+                        barriers for personalized treatment.</p>
+                </div>
+                <!-- HEALTHCARE FAQ 3 -->
+                <div
+                    class="faq-item p-4 sm:p-5 lg:p-6 bg-white rounded-xl lg:rounded-2xl border border-slate-100 cursor-pointer shadow-sm hover:shadow-md transition-all">
+                    <h4
+                        class="font-black text-[10px] sm:text-[11px] lg:text-xs uppercase flex justify-between items-center text-slate-900 gap-3">
+                        Are tele-consultations as effective as in-person visits? <i data-lucide="chevron-down"
+                            class="chevron-icon w-4 h-4 flex-shrink-0 transition-transform duration-300"></i></h4>
+                    <p
+                        class="faq-answer text-[10px] sm:text-[11px] text-slate-500 leading-relaxed uppercase tracking-tight font-bold">
+                        Yes! Our certified doctors provide comprehensive consultations with follow-ups, prescription
+                        support, and continuous monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --- MINIMAL FOOTER --- -->
+    <footer class="py-8 lg:py-12 bg-slate-950 text-white overflow-hidden relative">
+        <div
+            class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center uppercase">
+            <h2
+                class="text-[12vw] font-black leading-[0.8] tracking-tighter opacity-5 absolute top-0 left-1/2 -translate-x-1/2 whitespace-nowrap select-none uppercase">
+                ADDYFITNESS</h2>
+            <div class="space-y-4">
+                <p
+                    class="text-xs sm:text-md lg:text-xl font-black text-[#f41952] uppercase tracking-[0.3em] leading-none mb-2">
+                    Record Your Progress</p>
+                <h3 class="text-3xl lg:text-[6rem] font-black leading-none tracking-tighter uppercase">REGAIN <span
+                        class="text-[#8c52ff]">YOUR</span> LIFE.</h3>
+                <p
+                    class="text-[10px] sm:text-sm lg:text-lg text-slate-400 font-medium max-w-2xl mx-auto pt-4 leading-relaxed px-4 italic lowercase first-letter:uppercase">
+                    Your health is more than a number—it’s a story waiting to be reclaimed.
+                </p>
+            </div>
+            <div class="mt-6 lg:mt-8 flex justify-center gap-4 items-center">
+                <button
+                    class="px-8 lg:px-12 py-4 lg:py-5 cta-gradient text-white rounded-xl lg:rounded-2xl font-black text-sm lg:text-lg hover:scale-105 transition-all shadow-2xl btn-animate uppercase tracking-widest leading-none">
+                    Book Free Consultation Now
+                </button>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+    <script>
+        lucide.createIcons();
+
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+                if (!isActive) item.classList.add('active');
+            });
+        });
+
+        function calculateBMI() {
+            const weight = document.getElementById('weight').value;
+            const height = document.getElementById('height').value;
+            const resultDiv = document.getElementById('bmiResult');
+            const bmiValue = document.getElementById('bmiValue');
+            const bmiStatus = document.getElementById('bmiStatus');
+            if (weight && height) {
+                const hM = height / 100;
+                const bmi = (weight / (hM * hM)).toFixed(1);
+                bmiValue.innerText = bmi;
+                resultDiv.classList.remove('hidden');
+                if (bmi < 18.5) { bmiStatus.innerText = "Underweight"; bmiStatus.className = "px-4 py-1.5 rounded-full font-black text-[9px] uppercase bg-blue-100 text-blue-700"; }
+                else if (bmi < 25) { bmiStatus.innerText = "Healthy"; bmiStatus.className = "px-4 py-1.5 rounded-full font-black text-[9px] uppercase bg-emerald-100 text-emerald-700"; }
+                else if (bmi < 30) { bmiStatus.innerText = "Overweight"; bmiStatus.className = "px-4 py-1.5 rounded-full font-black text-[9px] uppercase bg-orange-100 text-orange-700"; }
+                else { bmiStatus.innerText = "Obese"; bmiStatus.className = "px-4 py-1.5 rounded-full font-black text-[9px] uppercase bg-red-100 text-red-700"; }
+                resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+    </script>
+</body>
+
+</html>
